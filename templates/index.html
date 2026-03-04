@@ -1,0 +1,127 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code_smartway | Code Smarter, Not Harder</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Code<span>smarter</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Code Smarter, Not Harder</h2>
+            <p>Learn programming, build real-world projects, and grow your skills with me.  
+            Join thousands of learners mastering Python, Web Development, and more!</p>
+            <div class="hero-buttons">
+                <a href="#courses" class="btn primary">Start Learning</a>
+                <a href="#services" class="btn secondary">Hire Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Code With Kamate</h2>
+            <p>We are a passionate team of developers and educators dedicated to making coding simple, practical, and accessible to everyone across Africa and beyond.  
+            <strong>Code With me</strong> was founded by <strong>Computer programmer</strong>, who envisioned a platform that empowers learners to become creators through technology.</p>
+            <p>Our vision is to create great thinkers who can solve real-world problems through technology.  
+            Whether you’re a student, a beginner, or a business, you’ll find guidance, projects, and mentorship here.</p>
+        </div>
+    </section>
+
+    <!-- COURSES -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Learn With Us</h2>
+            <p>Start your coding journey with step-by-step video tutorials and projects.</p>
+            <div class="course-grid">
+                <div class="course-card">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/YOUR_VIDEO_ID1" frameborder="0" allowfullscreen></iframe>
+                    <h3>Python for Beginners</h3>
+                    <p>Master Python from scratch with fun, real-life projects and challenges.</p>
+                </div>
+                <div class="course-card">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/YOUR_VIDEO_ID2" frameborder="0" allowfullscreen></iframe>
+                    <h3>Frontend Web Development</h3>
+                    <p>Learn HTML, CSS, and JavaScript to build modern and responsive websites.</p>
+                </div>
+                <div class="course-card">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/YOUR_VIDEO_ID3" frameborder="0" allowfullscreen></iframe>
+                    <h3>Backend & Databases</h3>
+                    <p>Understand how servers, APIs, and databases work together to power applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Let’s Build Something Together</h2>
+            <p>Need a custom web system or mobile app? We design and develop modern, secure, and scalable solutions for individuals and businesses.</p>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>System Design & Analysis</h3>
+                    <p>From idea to execution — we help you define requirements, analyze workflows, and design optimized systems.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Full Stack Web Development</h3>
+                    <p>End-to-end development using Python (Django/Flask), HTML, CSS, and modern JavaScript frameworks.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Consultation & Mentorship</h3>
+                    <p>Book 1-on-1 coding sessions or get personalized feedback on your projects from our expert team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Have a question, project idea, or partnership proposal? Let’s talk!</p>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Code With Kamate | Code Smarter, Not Harder</p>
+        <div class="social-links">
+            <a href="#">YouTube</a>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Email</a>
+        </div>
+    </footer>
+</body>
+</html>
